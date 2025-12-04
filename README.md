@@ -42,9 +42,9 @@ It demonstrates form structure, input validation, and responsive design.
 Note: This is a front-end project; form submissions do not send data.
 
 Screenshots
-![Form Screenshot] (screenshots/form-view-1.png)
-![Form Screenshot] (screenshots/form-view-2.png)
-![Form Screenshot] (screenshots/form-view-3.png)
+![Form Screenshot](screenshots/form-view-1.png)
+![Form Screenshot](screenshots/form-view-2.png)
+![Form Screenshot](screenshots/form-view-3.png)
 
 
 License
