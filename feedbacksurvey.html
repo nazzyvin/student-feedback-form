@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Survey</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1 id="title">Student Course Feedback Survey</h1>
+        <p id="description">Please take a moment to share your feedback about this course. Your responses help us improve the learning experience.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name" required>Full name</label>
+                <input id="name" type="text" placeholder="Enter your full name" required>
+                <label id="email-label" for="email" required>Email Address</label>
+                <input id="email" type="email" placeholder="you@example.com" required>
+                <label id="number-label" for="age" required>Age(years)</label>
+                <input id="age" type="number" min="10" max="120" placeholder="18" required>
+                <label id="class-label" for="class-level" required>Class Level</label>
+                <input id="class-level" type="number" min="1" max="12" placeholder="1" required>
+            </fieldset>
+            <fieldset>
+            <label for="dropdown">Which course are you giving feedback on?</label>
+            <select id="dropdown" name="course">
+                <option value="">(select one)</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="physics">Physics</option>
+                <option value="economics">Economics</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <legend >Course Feedback</legend>
+                <h4>How satisfied are you with this course?</h4>
+                <label>
+                    <input id="very-unsatisfied" type="radio" name="satisfaction" value="very-unsatisfied" class="inline">
+                    Very Unsatisfied
+                </label>
+                <label>
+                    <input id="unsatisfied" type="radio" name="satisfaction" value="unsatisfied" class="inline">
+                    Unsatisfied
+                </label>
+                <label>
+                    <input id="neutral" type="radio" name="satisfaction" value="neutral" class="inline">
+                    Neutral
+                </label>
+                <label>
+                    <input id="satisfied" type="radio" name="satisfaction" value="satisfied" class="inline">
+                    Satisfied
+                </label>
+                <label>
+                    <input id="very-satisfied" type="radio" name="satisfaction" value="very-satisfied" class="inline">
+                    Very Satisfied
+                </label>
+            
+                <h4>Which part of the course did you find helpful? (Select all that apply)</h4>
+                <label>
+                    <input id="lectures" type="checkbox" name="features" value="lectures" class="inline">
+                    Lectures
+                </label>
+                <label>
+                    <input id="assignments" type="checkbox" name="features" value="assignments" class="inline">
+                    Assignments
+                </label>
+                <label>
+                    <input id="group-work" type="checkbox" name="features" value="group-work" class="inline">
+                    Group work
+                </label>
+                <label>
+                    <input id="classroom-discussion" type="checkbox" name="features" value="classroom-discussion" class="inline">
+                    Classroom discussion
+                </label>
+                <label>
+                    <input id="learning-materials" type="checkbox" name="features" value="learning-materials" class="inline">
+                    Learning materials(notes, slides e.t.c)
+                </label>
+            </fieldset>
+                <h4>Additonal Comments and Suggestions</h4>
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Tell us what you think could be improved..."></textarea>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </body>
+</html>
